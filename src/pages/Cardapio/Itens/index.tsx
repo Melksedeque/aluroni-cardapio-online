@@ -1,7 +1,7 @@
 import cardapio from './itens.json'; 
 import Item from './Item';
 import styles from './Itens.module.scss';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 interface Props {
   busca: string,
@@ -13,17 +13,17 @@ export default function Itens(props: Props) {
   const [lista, setLista] = useState(cardapio);
   const { busca, filtro, ordenador } = props;
 
-  function testaBusca(title: string) {
+  const testaBusca = useCallback((title: string) => {
     const regex = new RegExp(busca, 'i');
     return regex.test(title);
-  }
+  }, [busca]);
 
-  function testaFiltro(id: number) {
+  const testaFiltro = useCallback((id: number) => {
     if(filtro !== null) return filtro === id;
     return true;
-  }
+  }, [filtro]);
 
-  function ordenar(novaLista: typeof cardapio) {
+  const ordenar = useCallback((novaLista: typeof cardapio) => {
     switch(ordenador) {
     case 'porcao': 
       return novaLista.sort((a, b) => a.size > b.size ? 1 : -1);
@@ -34,12 +34,12 @@ export default function Itens(props: Props) {
     default:
       return novaLista; 
     }
-  }
+  }, [ordenador]);
 
   useEffect(() => {
     const novaLista = cardapio.filter(item => testaBusca(item.title) && testaFiltro(item.category.id));
     setLista(ordenar(novaLista));
-  },[busca, filtro, ordenador]);
+  },[busca, filtro, ordenador, testaBusca, testaFiltro, ordenar]);
 
   return (
     <div className={styles.itens}>
