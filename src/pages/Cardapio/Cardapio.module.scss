@@ -1,6 +1,3 @@
-@import "styles/variaveis";
-@import "styles/breakpoints";
-
 .menu {
   padding: 20px $padding-horizontal;
   @media (max-width: $desktop_xsm) {
