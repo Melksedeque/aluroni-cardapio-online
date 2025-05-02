@@ -2,10 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'normalize.css';
 import './index.css';
-import Cardapio from './pages/Cardapio';
+import Inicio from './pages/Inicio';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Cardapio />
+    <Inicio />
   </StrictMode>,
 )
