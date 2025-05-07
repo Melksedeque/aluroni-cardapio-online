@@ -11,7 +11,7 @@ export default function Cardapio() {
   const [filtro, setFiltro] = useState<number | null>(null);
   const [ordenador, setOrdenador] = useState('');
   return (
-    <main>
+    <>
       <header className={styles.header}>
         <div className={styles.header__text}>
           A casa do código e da massa
@@ -26,6 +26,6 @@ export default function Cardapio() {
         </div>
         <Itens busca={busca} filtro={filtro} ordenador={ordenador} />
       </section>
-    </main>
+    </>
   );
 }

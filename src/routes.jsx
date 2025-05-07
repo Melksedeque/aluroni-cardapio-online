@@ -5,12 +5,14 @@ import Menu from './components/Menu';
 
 export default function AppRouter() {
     return (
-        <BrowserRouter>
-             <Menu />
-            <Routes>
-                <Route path='/' element={<Inicio />} />
-                <Route path='/cardapio' element={<Cardapio />} />
-            </Routes>
-        </BrowserRouter>
+        <main>
+            <BrowserRouter>
+                <Menu />
+                <Routes>
+                    <Route path='/' element={<Inicio />} />
+                    <Route path='/cardapio' element={<Cardapio />} />
+                </Routes>
+            </BrowserRouter>
+        </main>
     );
 }
