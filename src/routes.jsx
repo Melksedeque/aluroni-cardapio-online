@@ -9,11 +9,7 @@ export default function AppRouter() {
         <main>
             <BrowserRouter>
                 <Menu />
-                <header className={styles.header}>
-                    <div className={styles.header__text}>
-                        A casa do código e da massa
-                    </div>
-                </header>
+                
                 <Routes>
                     <Route path='/' element={<Inicio />} />
                     <Route path='/cardapio' element={<Cardapio />} />
