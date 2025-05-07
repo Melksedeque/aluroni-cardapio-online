@@ -1,4 +1,5 @@
 import styles from './PaginaPadrao.module.scss';
+
 export default function PaginaPadrao() {
     return (
         <header className={styles.header}>
