@@ -21,6 +21,16 @@ export default function Inicio() {
                 </div>
             ))}
         </div>
+        <h3>Nossa casa</h3>
+        <div className={styles.nossaCasa}>
+          <img src="" alt="Casa do Aluroni" />
+          <div className={styles.nossaCasa__endereco}>
+            Rua Vergueiro, 3185 <br />
+            Vila Mariana <br />
+            São Paulo <br />
+            CEP: 04536-030
+          </div>
+        </div>
     </section>
   );
 }
