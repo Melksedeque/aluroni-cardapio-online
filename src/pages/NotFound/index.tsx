@@ -1,7 +1,7 @@
 import styles from './NotFound.module.scss';
 import notFound from 'assets/not_found.svg';
 import classNames from 'classnames';
-import stylesTema from 'styles/Theme.module.scss';
+import stylesTema from 'styles/Tema.module.scss';
 
 export default function NotFound() {
   return (
