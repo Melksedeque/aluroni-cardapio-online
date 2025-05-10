@@ -1,15 +1,18 @@
-import styles from './NotFound.module.scss'
+import styles from './NotFound.module.scss';
+import notFound from 'assets/not_found.svg';
+import classNames from 'classnames';
+import stylesTema from 'styles/Theme.module.scss';
 
 export default function NotFound() {
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <h1>404</h1>
-        <p>Page not found</p>
+    <div className={classNames({
+        [styles.container]: true,
+        [stylesTema.container]: true,
+    })}>
+        <img src={notFound} alt="" />
         <p>
-          <a href="/">Go back to homepage</a>
+            <a href="/">Go back to homepage</a>
         </p>
-      </div>
     </div>
   )
 }
