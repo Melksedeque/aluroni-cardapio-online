@@ -9,7 +9,7 @@ import PaginaPadrao from './components/PaginaPadrao';
 
 export default function AppRouter() {
     return (
-        <main>
+        <main className='container'>
             <BrowserRouter>
                 <Menu />
                 <Routes>
