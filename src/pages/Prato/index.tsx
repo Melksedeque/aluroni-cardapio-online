@@ -2,10 +2,11 @@ import styles from './Prato.module.scss';
 import stylesTema from 'styles/Tema.module.scss';
 import { useLocation } from 'react-router-dom'
 import classNames from 'classnames';
+import cardapio from 'data/cardapio';
 
 export default function Prato() {
   const { state } = useLocation();
-  const { prato } = state;
+  const { prato } = state as { prato: typeof cardapio[0] };
   return (
     <>
       <button className={styles.voltar}>
