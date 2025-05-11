@@ -5,7 +5,7 @@ import cardapio from 'data/cardapio';
 
 export default function Prato() {
   const { id } = useParams();
-  const prato = cardapio.find(item => item.id === Number(id)) || {};
+  const prato = cardapio.find(item => item.id === Number(id));
   return (
     <>
       <button className={styles.voltar}>
