@@ -2,6 +2,7 @@ import cardapio from 'data/cardapio.json';
 import Item from './Item';
 import styles from './Itens.module.scss';
 import { useState, useEffect, useCallback } from 'react';
+import { Cardapio } from 'types/Prato';
 
 interface Props {
   busca: string,
@@ -23,7 +24,7 @@ export default function Itens(props: Props) {
     return true;
   }, [filtro]);
 
-  const ordenar = useCallback((novaLista: typeof cardapio) => {
+  const ordenar = useCallback((novaLista: Cardapio) => {
     switch(ordenador) {
     case 'porcao': 
       return novaLista.sort((a, b) => a.size > b.size ? 1 : -1);
