@@ -1,5 +1,4 @@
 import styles from './Prato.module.scss';
-import stylesTema from 'styles/Tema.module.scss';
 import { useLocation } from 'react-router-dom'
 import classNames from 'classnames';
 import cardapio from 'data/cardapio';
