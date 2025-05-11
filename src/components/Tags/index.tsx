@@ -1,4 +1,13 @@
-export default function Tags() {
+import { Prato } from 'types/Prato';
+import styles from './Tags.module.scss';
+import classNames from 'classnames';
+
+export default function Tags({
+  category,
+  size,
+  serving,
+  price,
+}: Prato) {
     return (
         <div className={styles.tags}>
             <div className={classNames({
@@ -17,5 +26,5 @@ export default function Tags() {
               R$ {prato.price ? prato.price.toFixed(2).replace('.', ',') : ''}
             </div>
         </div>
-    )
+    );
 }
