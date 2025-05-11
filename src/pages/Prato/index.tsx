@@ -1,6 +1,7 @@
 import styles from './Prato.module.scss';
 import stylesTema from 'styles/Tema.module.scss';
 import { useLocation } from 'react-router-dom'
+import classNames from 'classnames';
 
 export default function Prato() {
   const { state } = useLocation();
@@ -20,7 +21,10 @@ export default function Prato() {
             {prato.description}
           </p>
           <div className={styles.tags}>
-            <div className={}>
+            <div className={classNames({
+              [styles.tags__tipo]: true,
+              [styles[`tags__tipo__${prato.category.label.toLowerCase()}`]]: true,
+            })}>
               {prato.category.label}
             </div>
             <div className={styles.tags__porcao}>
