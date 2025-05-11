@@ -1,11 +1,11 @@
 import styles from './Prato.module.scss';
-import { useLocation } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import classNames from 'classnames';
 import cardapio from 'data/cardapio';
 
 export default function Prato() {
-  const { state } = useLocation();
-  const { prato } = state as { prato: typeof cardapio[0] };
+  const { id } = useParams();
+  const prato = cardapio.find(item => item.id === Number(id)) || {};
   return (
     <>
       <button className={styles.voltar}>
