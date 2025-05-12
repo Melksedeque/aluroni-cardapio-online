@@ -7,13 +7,13 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      'assets': path.resolve(__dirname, './src/assets'),
-      'components': path.resolve(__dirname, './src/components'),
-      'data': path.resolve(__dirname, './src/data'),
-      'pages': path.resolve(__dirname, './src/pages'),
-      'styles': path.resolve(__dirname, './src/styles'),
-      'types': path.resolve(__dirname, './src/types'),
-    }
+      assets: path.resolve(__dirname, './src/assets'),
+      components: path.resolve(__dirname, './src/components'),
+      data: path.resolve(__dirname, './src/data'),
+      pages: path.resolve(__dirname, './src/pages'),
+      styles: path.resolve(__dirname, './src/styles'),
+      types: path.resolve(__dirname, './src/types'),
+    },
   },
   css: {
     preprocessorOptions: {
@@ -21,8 +21,8 @@ export default defineConfig({
         additionalData: `
           @use "styles/_variaveis.scss" as *;
           @use "styles/_breakpoints.scss" as *;
-        `
-      }
-    }
-  }
-})
+        `,
+      },
+    },
+  },
+});
