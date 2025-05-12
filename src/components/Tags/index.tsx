@@ -12,18 +12,18 @@ export default function Tags({
         <div className={styles.tags}>
             <div className={classNames({
               [styles.tags__tipo]: true,
-              [styles[`tags__tipo__${prato.category.label.toLowerCase()}`]]: true,
+              [styles[`tags__tipo__${category.label.toLowerCase()}`]]: true,
             })}>
-              {prato.category.label}
+              {category.label}
             </div>
             <div className={styles.tags__porcao}>
-              {prato.size}g
+              {size}g
             </div>
             <div className={styles.tags__qtdpessoas}>
-              Serve {prato.serving} pessoa{prato.serving === 1 ? '' : 's'}
+              Serve {serving} pessoa{serving === 1 ? '' : 's'}
             </div>
             <div className={styles.tags__valor}>
-              R$ {prato.price ? prato.price.toFixed(2).replace('.', ',') : ''}
+              R$ {price ? price.toFixed(2).replace('.', ',') : ''}
             </div>
         </div>
     );
