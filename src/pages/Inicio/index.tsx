@@ -24,8 +24,6 @@ export default function Inicio() {
                     <img src={item.photo} alt={item.title} />
                     </div>
                     <h4>{item.title}</h4>
-                    <p>{item.description}</p>
-                    <p>{item.price}</p>
                     <button className={styles.recomendado__botao} onClick={() => redirecionarParaDetalhes(item)}>Ver mais</button>
                 </div>
             ))}
