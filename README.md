@@ -4,7 +4,6 @@
 
 ## Menu
 
-- [Layout](#layout)
 - [Descrição](#descrição)
   - [Principais recursos incluem](#principais-recursos-incluem)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -18,10 +17,6 @@
 - [Fluxo de Dados](#fluxo-de-dados)
 - [Licença](#licença)
 - [Autor](#autor)
-
-## Layout
-
-[Layout no Figma](https://www.figma.com/file/Atxu1zBvhmdTGEeTQHZlHD/Aluroni-Layout)
 
 ## Descrição
 
@@ -184,7 +179,7 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https
 
 ## Autor
 
-- GitHub - [Melksedeque Silva](https://github.com/Melksedeque/) <mcreference link="https://github.com/Melksedeque/" index="1">1</mcreference>
-- FrontEndMentor - [@Melksedeque](https://www.frontendmentor.io/profile/Melksedeque) <mcreference link="https://www.frontendmentor.io/profile/Melksedeque" index="2">2</mcreference>
-- Twitter / X - [@SouzaMelk](https://x.com/SouzaMelk) <mcreference link="https://x.com/SouzaMelk" index="3">3</mcreference>
-- LinkedIn - [Melksedeque Silva](https://www.linkedin.com/in/melksedeque-silva/) <mcreference link="https://www.linkedin.com/in/melksedeque-silva/" index="4">4</mcreference>
+- GitHub - [Melksedeque Silva](https://github.com/Melksedeque/)
+- FrontEndMentor - [@Melksedeque](https://www.frontendmentor.io/profile/Melksedeque)
+- Twitter / X - [@SouzaMelk](https://x.com/SouzaMelk)
+- LinkedIn - [Melksedeque Silva](https://www.linkedin.com/in/melksedeque-silva/)
