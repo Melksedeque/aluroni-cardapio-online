@@ -73,6 +73,8 @@ cardapio-aluroni/
 │   └── routes.jsx
 ├── .eslintrc.json
 ├── package.json
+├── README.md
+├── LICENSE
 ├── tsconfig.json
 └── vite.config.ts
 ```
@@ -120,6 +122,7 @@ Para os estilos globais, as variáveis estão definidas nos arquivos `_variaveis
 ### Casos de Uso Comuns
 
 1. Navegando pelo cardápio:
+
    - Acesse a página inicial e clique em "Ver Cardápio"
    - Ou navegue diretamente para a rota "/cardapio"
 
@@ -185,5 +188,3 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https
 - FrontEndMentor - [@Melksedeque](https://www.frontendmentor.io/profile/Melksedeque) <mcreference link="https://www.frontendmentor.io/profile/Melksedeque" index="2">2</mcreference>
 - Twitter / X - [@SouzaMelk](https://x.com/SouzaMelk) <mcreference link="https://x.com/SouzaMelk" index="3">3</mcreference>
 - LinkedIn - [Melksedeque Silva](https://www.linkedin.com/in/melksedeque-silva/) <mcreference link="https://www.linkedin.com/in/melksedeque-silva/" index="4">4</mcreference>
-
-        
