@@ -180,7 +180,7 @@ A aplicação gerencia o fluxo de dados principalmente através dos componentes 
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://github.com/Melksedeque/organo-alura-reactjs?tab=MIT-1-ov-file) <mcreference link="https://github.com/Melksedeque/organo-alura-reactjs?tab=MIT-1-ov-file" index="0">0</mcreference> para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://github.com/Melksedeque/aluroni-cardapio-online?tab=MIT-1-ov-file) para mais detalhes.
 
 ## Autor
 
