@@ -7,7 +7,6 @@
 - [Layout](#layout)
 - [Descrição](#descrição)
   - [Principais recursos incluem](#principais-recursos-incluem)
-  - [Próximos passos de desenvolvimento](#próximos-passos-de-desenvolvimento)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Estrutura de Pastas](#estrutura-de-pastas)
   - [Arquivos Principais](#arquivos-principais)
@@ -38,13 +37,6 @@ O projeto foi desenvolvido com React e TypeScript, utilizando módulos CSS para 
 - Ordenação de itens por diferentes critérios
 - Interface responsiva e amigável ao usuário
 - Estilização modular com SCSS
-
-### Próximos passos de desenvolvimento
-
-- Implementar funcionalidade de carrinho de compras
-- Adicionar sistema de avaliação para os pratos
-- Criar área de favoritos para o usuário
-- Implementar modo escuro na interface
 
 ## Tecnologias Utilizadas
 
