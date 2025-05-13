@@ -81,7 +81,7 @@ cardapio-aluroni/
 
 ### Arquivos Principais:
 
-- `src/routes.jsx`: Gerencia as rotas da aplicação usando React Router
+- `src/routes.tsx`: Gerencia as rotas da aplicação usando React Router
 - `src/pages/Cardapio/index.tsx`: Componente principal da página de cardápio
 - `src/pages/Cardapio/Itens/index.tsx`: Gerencia a lógica de filtragem e ordenação dos itens
 - `src/styles/_variaveis.scss` e `src/styles/_breakpoints.scss`: Arquivos SCSS com variáveis globais
