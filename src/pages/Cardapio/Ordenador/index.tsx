@@ -48,4 +48,4 @@ function Ordenador({ ordenador, setOrdenador }: Props) {
   );
 }
 
-export default memo(Ordenador)
+export default memo(Ordenador);
