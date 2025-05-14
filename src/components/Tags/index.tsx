@@ -1,6 +1,6 @@
-import { Prato } from 'types/Prato';
 import styles from './Tags.module.scss';
 import classNames from 'classnames';
+import { Prato } from 'types/Prato';
 
 export default function Tags({ category, size, serving, price }: Prato) {
   return (
