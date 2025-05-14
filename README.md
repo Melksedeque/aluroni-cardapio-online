@@ -146,7 +146,7 @@ Problema Comum: Erros de ESLint
 
 ## Projeto ao Vivo
 
-Você pode ver o projeto ao vivo neste link: [https://cardapio-aluroni.vercel.app/](https://cardapio-aluroni.vercel.app/)
+Você pode ver o projeto ao vivo neste link: [https://aluroni-cardapio-online.vercel.app/](https://aluroni-cardapio-online.vercel.app/)
 
 ## Fluxo de Dados
 
