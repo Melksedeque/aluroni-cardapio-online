@@ -35,7 +35,7 @@ O projeto foi desenvolvido com React e TypeScript, utilizando módulos CSS para 
 
 ## Tecnologias Utilizadas
 
-- **React.js:** Biblioteca JavaScript para construção de interfaces de usuário
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário
 - **TypeScript:** Superset de JavaScript que adiciona tipagem estática
 - **SCSS Modules:** Para estilização modular e isolada dos componentes
 - **React Router DOM:** Para gerenciamento de rotas e navegação
