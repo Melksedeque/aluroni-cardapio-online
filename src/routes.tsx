@@ -5,10 +5,10 @@ import Prato from './pages/Prato';
 import NotFound from './pages/NotFound';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
-import PaginaPadrao from './components/PaginaPadrao';
 import { lazy, Suspense } from 'react';
 
 const Cardapio = lazy(() => import('./pages/Cardapio'));
+const PaginaPadrao = lazy(() => import('./components/PaginaPadrao'));
 
 export default function AppRouter() {
   return (
