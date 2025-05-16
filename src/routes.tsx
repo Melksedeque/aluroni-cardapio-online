@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Inicio from './pages/Inicio';
 import Sobre from './pages/Sobre';
 import Prato from './pages/Prato';
 import NotFound from './pages/NotFound';
@@ -8,6 +7,7 @@ import Footer from './components/Footer';
 import { lazy, Suspense } from 'react';
 
 const Cardapio = lazy(() => import('./pages/Cardapio'));
+const Inicio = lazy(() => import('./pages/Inicio'));
 const PaginaPadrao = lazy(() => import('./components/PaginaPadrao'));
 
 export default function AppRouter() {
