@@ -27,6 +27,7 @@ O projeto foi desenvolvido com React e TypeScript, utilizando módulos CSS para 
 ### Principais recursos incluem:
 
 - Navegação entre páginas utilizando React Router
+- Carregamento sob demanda (lazy loading) para melhor performance
 - Filtros dinâmicos por categoria de alimentos
 - Buscador de pratos por texto
 - Ordenação de itens por diferentes critérios
@@ -39,6 +40,7 @@ O projeto foi desenvolvido com React e TypeScript, utilizando módulos CSS para 
 - **TypeScript:** Superset de JavaScript que adiciona tipagem estática
 - **SCSS Modules:** Para estilização modular e isolada dos componentes
 - **React Router DOM:** Para gerenciamento de rotas e navegação
+- **React Lazy e Suspense:** Para carregamento sob demanda de componentes
 - **ESLint:** Ferramenta para identificar e corrigir problemas no código
 - **Vite:** Ferramenta de build moderna para desenvolvimento rápido
 
@@ -65,7 +67,7 @@ cardapio-aluroni/
 │   │   ├── _breakpoints.scss
 │   │   └── _variaveis.scss
 │   ├── index.tsx
-│   └── routes.jsx
+│   └── routes.tsx
 ├── .eslintrc.json
 ├── package.json
 ├── README.md
@@ -76,7 +78,7 @@ cardapio-aluroni/
 
 ### Arquivos Principais:
 
-- `src/routes.tsx`: Gerencia as rotas da aplicação usando React Router
+- `src/routes.tsx`: Gerencia as rotas da aplicação usando React Router e implementa lazy loading para carregamento sob demanda dos componentes
 - `src/pages/Cardapio/index.tsx`: Componente principal da página de cardápio
 - `src/pages/Cardapio/Itens/index.tsx`: Gerencia a lógica de filtragem e ordenação dos itens
 - `src/styles/_variaveis.scss` e `src/styles/_breakpoints.scss`: Arquivos SCSS com variáveis globais
@@ -136,13 +138,13 @@ Problema Comum: Erros de importação SCSS
   2. Certifique-se de que os nomes dos arquivos SCSS correspondem exatamente aos importados
   3. Reinicie o servidor de desenvolvimento após alterações na configuração
 
-Problema Comum: Erros de ESLint
+Problema Comum: Tela de carregamento permanece visível
 
-- Problema: Warnings ou erros de linting no console
+- Problema: A mensagem "Carregando..." não desaparece ao navegar entre páginas
 - Solução:
-  1. Execute `npm run lint` para verificar todos os erros
-  2. Corrija os problemas seguindo as recomendações do ESLint
-  3. Para problemas com React Hooks, certifique-se de seguir as regras de dependências
+  1. Verifique se há erros no console do navegador
+  2. Certifique-se de que os componentes importados via lazy loading existem nos caminhos especificados
+  3. Verifique se há erros de sintaxe nos componentes carregados
 
 ## Projeto ao Vivo
 
@@ -173,6 +175,14 @@ A aplicação gerencia o fluxo de dados principalmente através dos componentes 
      └─────────────────────────────────────────────┘
 ```
 
+## Otimização de Performance
+
+O projeto implementa técnicas de otimização de performance:
+
+1. **Lazy Loading**: Todos os componentes principais são carregados sob demanda usando `React.lazy()` e `Suspense`, o que melhora o tempo de carregamento inicial da aplicação
+2. **Code Splitting**: O código é dividido em chunks menores que são carregados apenas quando necessários
+3. **Suspense**: Fornece uma experiência de carregamento amigável ao usuário enquanto os componentes são carregados
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://github.com/Melksedeque/aluroni-cardapio-online?tab=MIT-1-ov-file) para mais detalhes.
@@ -183,3 +193,5 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https
 - FrontEndMentor - [@Melksedeque](https://www.frontendmentor.io/profile/Melksedeque)
 - Twitter / X - [@SouzaMelk](https://x.com/SouzaMelk)
 - LinkedIn - [Melksedeque Silva](https://www.linkedin.com/in/melksedeque-silva/)
+
+        
